@@ -108,7 +108,34 @@ display: none;
   
  }
 
- 
+ @media all and (max-width:992px) {
+  /* .upcome .events  {
+    background-color: green;
+  } */
+
+  .upcome .events .events-list {
+    /* background-color: aqua; */
+    padding-left:20px;
+   
+  }
+  .upcome .events .event-item {
+   width:45%;
+     
+  }
+  
+ }
+
+
+ @media all and (max-width:576px) {
+
+  .upcome .events {
+    text-align: center;
+  }
+  .upcome .events .event-item{
+     width: 45%;
+  }
+  
+ }
  /* calendar */
 
  
@@ -217,7 +244,7 @@ background-color:#b11e24;
 
 .calendar .events-image {
   width:100%;
-  height:50px;
+  height:100%;
   /* background-color: red; */
 }
 
