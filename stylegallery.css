@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ ul {
+    list-style-type: none;
+ }
+
+li a{
+   text-decoration: none;
+
+ }
+ 
+
+ .first-color {
+    color: #b11e24;
+ }
+
+ /* navbar */
+ 
+ .btn-anim:hover{
+background-color:red;
+color: white;
+ }
+ 
+ 
+ nav .list-item a {
+   color:black;
+ }
+
+ nav .list-menu {
+    border:2px solid red;
+    display: none;
+   text-align: center;
+    
+  
+ }
+
+ nav .list-item .list-menu a {
+   width:140px;
+   margin:2px 6px;
+ }
+
+  nav .list-item:hover .list-menu {
+    display:flex;
+ }
+
+ @media all and (max-width:575.33px) {
+  nav ul {
+   display: flex;
+   flex-direction: column;
+  }
+
+  nav ul li span {
+display: none;
+  }
+
+  nav ul li.line {
+   display: none;
+  }
+  
+  nav .list-item {
+    display: block;
+    margin-bottom:120px;
+  }
+ 
+  nav .list-item .list-menu {
+  
+   display:flex;
+   flex-direction: column;
+   font-size:12px;
+   margin-top:15px;
+  
+  }
+ 
+
+  nav .list-item .list-menu a {
+    border:2px solid red;
+  }
+  nav .list-item.calendar-tab {
+    margin-top:120px;
+    margin-bottom:0;
+  }
+  nav .list-item:last-child .list-menu {
+    left:50%;
+  }
+ 
+ }
+
+ /* gallery */
+ .folder-images {
+    display: flex;
+    flex-wrap: wrap;
+    width:60%;
+    height:600px;
+    margin:20% auto;
+    transform:rotateZ(45deg);
+     
+     
+ }
+
+ 
+ .folder-images .image {
+    position: relative;
+    margin:11px;
+    width:30%;
+    height:35%;
+    /* background-image:url(https://test.cambridge.edu.jo/assets/images/Website%20pix/5Q7C2430.jpg); */
+    /* background-size: cover; */
+    color: rgb(239, 237, 237);
+    overflow: hidden;
+    border-radius:10px;
+ }
+ 
+ .folder-images .image .img-image {
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    transform: rotate(-45deg);
+ }
+
+ .folder-images .image .img-image img {
+    width:100%;
+    height:100%;
+    transform:scale(1.4)
+   
+    
+}
+
+ .folder-images .image::before {
+    position: absolute;
+    content: "";
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(111, 52, 99, 0.526);
+
+ }
+
+ .folder-images .image .line {
+    position: absolute;
+    width:90%;
+    height:80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:2px solid rgb(223, 223, 223);
+ }
+
+ .folder-images .image .line h3 {
+position: absolute;
+font-weight: normal;
+ display: flex;
+ width:100%;
+ height:100%;
+ transform: rotateZ(-45deg);
+ justify-content: center;
+ align-items: center;
+ 
+}
+ 
+ 
+
+
+@media all and (max-width:1100px){
+    .folder-images {
+        transform: rotate(0);
+       
+    }
+
+    .folder-images .image {
+        position: relative;
+        width:25%;
+        
+    }
+
+    .folder-images .image .line h3 {
+        transform: rotate(0);
+        position: absolute;
+        margin: 0;
+        top:50%;
+        left:50%;
+         transform: translate(-50%,-50%);
+         font-size:15px;
+    }
+
+    .folder-images .image .img-image {
+  
+        transform:none;
+     }
+    
+     .folder-images .image .img-image img {
+        transform:none;
+    }
+    
+
+}
+
+@media all and (max-width:991px){
+
+    .gallery {
+        height:1400px;
+    }
+    .folder-images .image {
+        position: relative;
+        width:45%;
+        margin:10px auto;
+    }
+
+    
+    .folder-images .image .img-image {
+  
+        transform:none;
+     }
+    
+     .folder-images .image .img-image img {
+        transform:none;
+    }
+}
+
+@media all and (max-width:675px){
+    .gallery {
+         height:2150px;
+    }
+    .folder-images .image {
+        position: relative;
+       width:100%;
+    }
+
+    .folder-images .image .line h3 {
+        font-size:20px;
+        font-weight: bold;
+    }
+
+    
+    .folder-images .image .img-image {
+  
+        transform:none;
+     }
+    
+     .folder-images .image .img-image img {
+        transform:none;
+    }
+}
+
+/* video */
+
+.video {
+    background-color: #e1dada;
+     
+    
+}
+ 
+.video .video-large {
+    /* background-color: #b11e24; */
+    text-align: center;
+}
+ 
+
+.video .video-small {
+    /* background-color: aqua; */
+    text-align: center;
+     padding:30px;
+}
+
+
+
+/* footer */
+
+footer {
+    width:100%;
+  }
+  
+  footer .footer-icons::after{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:1px;
+    background-color: white;
+    bottom: 0;
+     
+  }
+   
+  @media all and (max-width:675px) {
+     footer .copyright-footer {
+      text-align: center;
+     }
+  
+     footer .footer-list {
+      flex-wrap: wrap;
+     margin: auto;
+     }
+  
+     footer .footer-list li:last-child {
+       margin: auto;
+     }
+  
+  
+  }
